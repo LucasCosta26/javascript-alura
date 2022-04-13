@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+        var chute = parseInt(prompt('Digite um numero'));
+        var numero = 7;
+        var tentativas = 0;
+        function jogo (){
+        if ( isNaN(chute)) {
+            mostra ('Voce tem que digitar um número');
+        
+        }
+         mostra('O numero foi ' + chute);
+        }
+    </script>
+</body>
+</html>

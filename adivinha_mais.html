@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" min="1" max="10" placeholder="Escolha um número de 1 a 10" style="width: 200px;">
+    <button onclick="mostra()">Compare com o número</button>
+    <script>
+        var numeroCerto = Math.round(Math.random()*10);
+        var numero = document.querySelector('input');
+        numero.focus();
+        function mostra () {
+            if (numero.value == numeroCerto) {
+                document.write('Voce acertou, o numero é ' + numeroCerto);
+            }else{
+                document.write('Voce errou!')
+            }
+        }
+    </script>
+</body>
+</html>

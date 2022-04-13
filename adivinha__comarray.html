@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="number"
+      min="1"
+      max="10"
+      placeholder="Escolha um número de 1 a 10"
+      style="width: 200px"
+    />
+    <button onclick=mostra()>Compare com o número</button>
+    <script>
+      var numeroCertos = [1, 7, 10, 3];
+
+      var numero = document.querySelector("input");
+      numero.focus();
+
+     
+        
+      function mostra() {
+        var achou = false; 
+
+        for (var posicao = 0; posicao < numeroCertos.length; posicao++) {
+          if (numero.value == numeroCertos[posicao]) {
+            alert("Voce acertou.");
+            achou = true;
+            break;
+          } 
+        
+          
+          if( achou == false){
+           
+          alert('Voce errou.')
+          numero.value = "";
+          }
+       
+    }
+      }
+
+    </script>
+  </body>
+</html>

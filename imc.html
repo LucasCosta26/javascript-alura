@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+function pulaLinha() {
+
+document.write("<br>");
+document.write("<br>");
+
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+    return  peso / (altura * altura);
+}
+
+var  nome = prompt('Qual é o seu nome?');
+var altura = prompt(`Olá ${nome}, informe sua altura.`);
+var peso = prompt (`Agora ${nome}, informe seu peso`);
+
+mostra (nome + ` seu imc é ` +   calculaImc(altura, peso));
+
+var imcFlavio = calculaImc( 1.71, 73); 
+var imcLucas = calculaImc( 1.75, 80);
+
+mostra  (imcFlavio);
+mostra  (imcLucas);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+  </style>
+  <body>
+    <canvas width="400" height="300"></canvas>
+    <br />
+    <script>
+      var p = document.createElement("p");
+      p.innerHTML = "Mas o que é isso";
+      document.body.appendChild(p);
+       var caralho = 18;
+      document.write(caralho);
+      
+      // alert('vc tem muito o que aprender ainda');
+      document.write("<br>");
+      document.write((35 + 26) / 5);
+      document.write("<br>");
+      document.write(5 / (35 + 26));
+      document.write("<br>");
+      document.write("15" + "2");
+      document.write("<br>");
+      document.write("A" + "B" + (20 + 10) + "C" + (5 + 10) + "D");
+
+      function desenhar(a, l, tl, ta, cor) {
+        var tela = document.querySelector("canvas");
+
+        var pincel = tela.getContext("2d");
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(a, l, tl, ta);
+        pincel.fillStyle = cor;
+        pincel.fillRect(a, l, tl, ta);
+        pincel.fillStyle = cor;
+        pincel.fillRect(a, l, tl, ta);
+      }
+      desenhar(0, 0, 400, 300, "green");
+      desenhar(0, 0, 133, 300, "black");
+      desenhar(266, 0, 233, 300, "red");
+    </script>
+  </body>
+</html>
